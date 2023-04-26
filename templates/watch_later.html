@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  h2 {
+    margin-bottom: 2rem;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    flex: 1 1 100px;
+    height: 100px;
+    width: 100px;
+
+  }
+  
+  a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #333;
+    padding: 1rem;
+  }
+  
+  a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+  
+  p {
+    margin: 0;
+  }
+
+  .pic {
+    max-width: 200px;
+    max-height: 320px;
+    min-width: 10;
+  }
+  button{
+    width: 120px;
+    height: 100px;
+    color:black;
+    background:aqua;
+  }
+
+  .home{
+    width: 100px;
+    height: 50px;
+    color:#333;
+  }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Watch later:</h1>
+      
+      <form action="/watch_later/clear" method="POST">
+            
+        <button class="button" name="clear_button">Clear</button>
+      </form>
+     
+    </header>
+    <a class="home" href="http://127.0.0.1:5000/">Home</a>
+
+    <main>
+
+      <ul>
+        
+        {% for data in watch_later %}
+        <li>
+            <a href="#">
+              <img class = "pic" src={{watch_later[data][0]}} alt="picture" />
+              <h3 name="movie_name">{{data}}</h3>
+              <p>{{watch_later[data][2]}} ({{watch_later[data][3]}}) </p>
+              <p>{{watch_later[data][1]}}</p> 
+            </a>
+          </li>
+          
+          
+        {% endfor %}
+        
+      </ul>
+    </main>
+  </body>
+</html>
