@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Film Info</title>
+    <link rel="stylesheet" href={{url_for("static", filename="css/movie_info.css")}}>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Film Title</h1>
+      <img src={{movie_picture}} alt="Film Poster">
+
+      <p><strong>Name:</strong>{{movie_name}}</p>
+      <p><strong>Cost:</strong>{{movie_cost}}</p>
+      <p><strong>Movie Type:</strong>{{movie_type}}</p>
+      <p><strong>Movie Genre:</strong>{{movie_genre}}</p>
+      <p><strong>Movie Views:</strong>{{movie_views}}</p>
+    </div>
+  </body>
+</html>

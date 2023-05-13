@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href={{ url_for('static', filename='css/profile.css')}}>
+	<title>My Profile</title>
+
+</head>
+<body>
+	<header>
+		<h1>Profile</h1>
+	</header>
+	<div class="container">
+		<h3>Name: {{username}}</h3>
+		<p>Gmail: {{gmail}}</p>
+		<p>Password: {{visible_password}}</p>
+
+		<!-- <form action="/visible_profile">
+		<button>Show the password</button>
+		</form> -->
+	</div>
+
+</body>
+</html>
+

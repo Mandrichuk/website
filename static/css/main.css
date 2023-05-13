@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  
+  h1 {
+    font-size: 64px;
+    text-align: center;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .film-btn,
+  .series-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .film-btn:hover,
+  .series-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .genres {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #3498db;
+    transition: all 0.3s ease;
+  }
+  
+  .a{
+    color: #bb149c;
+    min-height: 200px;
+    max-height: 200px;
+  }
+  
+  .results {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  .button {
+    background-color: #888;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button.active {
+    background-color: #f00;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .button:active {
+    background-color: #f00;
+  }
+  
+  .button:hover {
+    background-color: #444;
+  }
+  
+  .button.active:hover {
+    background-color: #f00;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  .lobby{
+    font-size:50px;
+  }
+  
+  .genres{
+    font-size:30px;
+  }
+  h3{
+    color:#2980b9;
+  }
